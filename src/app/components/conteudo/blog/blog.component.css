@@ -1,0 +1,60 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-conteudo-blog {
+    background-color: white; 
+    
+    width: 100%; 
+    height: auto; 
+    
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.div-p {
+    width: 500px; 
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; 
+    
+    margin: 20px;
+}
+
+.imgs {
+    width: 250px; 
+    height: 350px; 
+    margin-top: 50px;
+
+    border-top-left-radius: 70px; 
+    border-top-right-radius: 70px; 
+    border: 10px solid #C3CBB3;
+}
+
+input {
+    width: 100px; 
+    height: 30px; 
+    
+    border: none; 
+    border-radius: 10px;
+
+    background-color: #787e6e; 
+    color: white; 
+        
+    font-size: 15px; 
+    font-weight: 600; 
+}
+
+input:hover {
+    background-color: #C3CBB3; 
+    cursor: pointer;
+}

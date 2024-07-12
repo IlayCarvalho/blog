@@ -1,0 +1,25 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #C3CBB3;
+
+    height: 60px;
+}
+
+h1 {
+    margin-left: 20px;
+
+    color: #ffffff;
+}
+
+p {
+    margin-right: 30px;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 600
+}

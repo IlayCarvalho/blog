@@ -1,0 +1,43 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #C3CBB3;
+
+    height: 60px;
+}
+
+h1 {
+    margin-left: 20px;
+
+    color: #ffffff;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    list-style-type: none;
+
+    margin-right: 30px;
+}
+
+ul :hover {
+    color: #546338;
+
+    cursor: pointer;
+} 
+
+li {
+    color: white;
+
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
