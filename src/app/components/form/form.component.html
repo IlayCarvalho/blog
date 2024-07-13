@@ -1,20 +1,20 @@
-<form>
+<form [formGroup]="editForm">
     <div>
         <h3>EDITAR :)</h3>
     </div>
     <div>
         <label>Titulo:</label>
-        <input class="input-text" type="text">
-        <div>
-            <p>No minimo 20 caracteres*</p>
+        <input class="input-text" type="text" formControlName="titulo" required>
+        <div *ngIf="editForm.get('titulo')?.invalid">
+            <p>O titulo é obrigatório*</p>
         </div>
     </div>
 
     <div>
         <label>Texto:</label>
-        <textarea rows="10" cols="50"></textarea>
-        <div>
-            <p>No minimo 200 caracteres*</p>
+        <textarea rows="10" cols="50" formControlName="descricao" required></textarea>
+        <div *ngIf="editForm.get('descricao')?.invalid">
+            <p>A descrição é obrigatoria*</p>
         </div>
     </div>
 
