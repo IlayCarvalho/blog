@@ -1,11 +1,11 @@
-<form [formGroup]="editForm">
+<form [formGroup]="form">
     <div>
         <h3>EDITAR :)</h3>
     </div>
     <div>
         <label>Titulo:</label>
         <input class="input-text" type="text" formControlName="titulo" required>
-        <div *ngIf="editForm.get('titulo')?.invalid">
+        <div *ngIf="form.controls.titulo.invalid">
             <p>O titulo é obrigatório*</p>
         </div>
     </div>
@@ -13,10 +13,10 @@
     <div>
         <label>Texto:</label>
         <textarea rows="10" cols="50" formControlName="descricao" required></textarea>
-        <div *ngIf="editForm.get('descricao')?.invalid">
+        <div *ngIf="form.controls.descricao.invalid">
             <p>A descrição é obrigatoria*</p>
         </div>
     </div>
 
-    <input class="btn-s" type="button" value="Salvar">
+    <button class="btn-s" type="submit" (click)="cadastrar()">Salvar</button>
 </form>

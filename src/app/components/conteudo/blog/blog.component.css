@@ -40,6 +40,12 @@
     border: 10px solid #C3CBB3;
 }
 
+.div-btns {
+    display: flex; 
+    flex-direction: row; 
+    gap: 1rem; 
+}
+
 input {
     width: 100px; 
     height: 30px; 
@@ -56,5 +62,24 @@ input {
 
 input:hover {
     background-color: #C3CBB3; 
+    cursor: pointer;
+}
+
+.btn-excluir {
+    width: 100px; 
+    height: 30px; 
+    
+    border: none; 
+    border-radius: 10px;
+
+    background-color: #7c0000; 
+    color: white; 
+        
+    font-size: 15px; 
+    font-weight: 600; 
+}
+
+.btn-excluir:hover {
+    background-color: #b90101; 
     cursor: pointer;
 }

@@ -1,11 +1,10 @@
-<div class="div-conteudo-blog">
+<div class="div-conteudo-blog" *ngFor="let p of listaPost">
     <div class="div-p">
-        <h4>TITULO</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ultrices diam, in mattis enim. Maecenas tempus sem ac maximus congue. Phasellus ultricies ligula vitae mi facilisis convallis. Etiam vitae ullamcorper risus. Ut pellentesque diam id rhoncus commodo. Pellentesque ut nisi lobortis, interdum sapien nec, fringilla enim. Proin viverra dui in tempor luctus. 
-            Integer eleifend posuere tincidunt. Mauris ante mauris, ultricies nec tincidunt vitae, cursus et felis.
-            Maecenas ut arcu molestie, facilisis lorem a, congue est. Morbi feugiat luctus lacus ut dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce tincidunt faucibus ultricies. Sed mollis mattis vulputate. Donec vehicula posuere quam nec venenatis. Suspendisse eu diam tincidunt lorem congue viverra.</p>
-    
-            <a routerLink="/form" ><input type="button" value="Editar"></a>
-        </div>
+        <h4>{{p.titulo}}</h4>
+        <p>{{p.descricao}}</p>
+        <div class="div-btns">
+            <button class="btn-excluir" (click) = "excluir(p.id!)">Excluir</button>
+        </div>         
+    </div>
     <img class="imgs" src="../../../../assets/img/download (3).jpg">
 </div>

@@ -68,6 +68,10 @@ a {
     margin-bottom: 20px;
 }
 
+a:hover {
+    color:rgb(142, 212, 0)3;
+}
+
 i {
     color: white; 
     
