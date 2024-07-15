@@ -30,4 +30,11 @@ export class PostService {
 
     return this.http.put(urlP, post);
   };
+
+  public buscaPost(id: number): Observable<Post> {
+    
+    const urlP: string = `${this.url}/${id}`;
+
+    return this.http.get<Post>(urlP);
+  }
 }

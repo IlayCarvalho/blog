@@ -1,0 +1,22 @@
+<form [formGroup]="formAt">
+    <div>
+        <h3>EDITAR :)</h3>
+    </div>
+    <div>
+        <label>Titulo:</label>
+        <input class="input-text" type="text" formControlName="titulo" value="{{dados.titulo}}" required>
+        <div *ngIf="formAt.controls.titulo.invalid">
+            <p>O titulo é obrigatório*</p>
+        </div>
+    </div>
+
+    <div>
+        <label>Texto:</label>
+        <textarea rows="10" cols="50" formControlName="descricao" value="{{dados.descricao}}" required></textarea>
+        <div *ngIf="formAt.controls.descricao.invalid">
+            <p>A descrição é obrigatoria*</p>
+        </div>
+    </div>
+
+    <button class="btn-s" type="submit" (click)="editar()" >Atualizar</button>
+</form>

@@ -102,3 +102,8 @@ input:hover {
     background-color: #b90101; 
     cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
