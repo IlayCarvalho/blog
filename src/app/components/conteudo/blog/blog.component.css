@@ -65,6 +65,25 @@ input:hover {
     cursor: pointer;
 }
 
+.btn-editar {
+    width: 100px; 
+    height: 30px; 
+    
+    border: none; 
+    border-radius: 10px;
+
+    background-color: #3f5f00; 
+    color: white; 
+        
+    font-size: 15px; 
+    font-weight: 600; 
+}
+
+.btn-editar:hover {
+    background-color: #6da300; 
+    cursor: pointer;
+}
+
 .btn-excluir {
     width: 100px; 
     height: 30px; 

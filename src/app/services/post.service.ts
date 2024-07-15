@@ -10,17 +10,24 @@ export class PostService {
 
   protected url: string = "http://localhost:8080/api/blog";
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { };
 
-  listaPost(): Observable<Post[]> {
-    return this.http.get<Post[]>(this.url)
-  }
+  public listaPost(): Observable<Post[]> {
+    return this.http.get<Post[]>(this.url);
+  };
 
-  criarPost(post: Post): Observable<Post> {
-    return this.http.post<Post>(this.url, post)
-  }
+  public criarPost(post: Post): Observable<Post> {
+    return this.http.post<Post>(this.url, post);
+  };
 
-  deletarPost(id: number) {
-    return this.http.delete(`${this.url}/${id}`)
-  }
+  public deletarPost(id: number) {
+    return this.http.delete(`${this.url}/${id}`);
+  };
+
+  public atualizarPost(id: number, post: Post) {
+
+    const urlP: string = `${this.url}/${id}`;
+
+    return this.http.put(urlP, post);
+  };
 }
